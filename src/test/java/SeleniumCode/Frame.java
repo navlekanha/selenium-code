@@ -14,11 +14,12 @@ public class Frame {
 		WebDriver driver=new ChromeDriver();
 		  driver.get("https://the-internet.herokuapp.com/iframe");
 		  driver.manage().window().maximize();
+		  driver.manage().window().minimize();
 		     WebElement e=driver.findElement(By.xpath("//iframe[@title=\"Rich Text Area\"]"));
 		  driver.switchTo().frame(e);
 		  driver.findElement(By.xpath("//body[@id=\"tinymce\"]/p")).clear();
 		  driver.findElement(By.xpath("//body[@id=\"tinymce\"]/p")).sendKeys("kanah navle");
 	}
-System.out.println("hello new project");
+
 
 }
