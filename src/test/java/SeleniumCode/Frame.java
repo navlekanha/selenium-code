@@ -19,5 +19,6 @@ public class Frame {
 		  driver.findElement(By.xpath("//body[@id=\"tinymce\"]/p")).clear();
 		  driver.findElement(By.xpath("//body[@id=\"tinymce\"]/p")).sendKeys("kanah navle");
 	}
+System.out.println("hello new project");
 
 }
